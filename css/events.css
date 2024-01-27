@@ -1,0 +1,551 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e7e7e7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+    height: 100%;
+}
+
+.logo img {
+    height: 100%;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+}
+
+.navbar img {
+    display: none;
+}
+
+.navbar a:hover {
+    background-color: rgb(35, 183, 40);
+    border-color: rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #000000;
+    border-radius: 2em;
+}
+
+.buttons a {
+    color: #000000;
+    font-size: 1.1rem;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.btn-registrieren {
+    background-color: rgb(35, 183, 40);
+    color: white !important;
+    border-left: solid 1px #000000;
+    border-radius: 2em;
+}
+
+.lgn-btn {
+    background-color: rgb(255, 255, 255);
+    color: black !important;
+    border-radius: 2em;
+}
+
+.buttons a:hover {
+    color: white !important;
+    text-decoration: underline;
+    background-color: rgb(116, 116, 116);
+}
+
+.menubutton {
+    display: none;
+    cursor: pointer;
+    background: inherit;
+    color: rgb(35, 183, 40);
+    font: inherit;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 2em;
+}
+
+.menubutton:hover {
+    background-color: rgb(35, 183, 40);
+    border-color: rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+
+.menubutton img {
+    height: 2em;
+    width: 2em;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-self: center;
+    max-width: 100%;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    padding: 3px;
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+/* Header für die Events-Seite */
+.event-header {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 1em;
+
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.header h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Kalender-Stile */
+.calendar {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 1em;
+    padding: 20px;
+    text-align: center;
+    margin: 1em;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+
+}
+
+/* Veranstaltungskarten-Stile */
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    overflow-y: auto;
+    max-height: 39em;
+}
+
+/* Benutzerdefinierte Scrollleisten-Stile */
+.container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* Farbe des Scrollbar-Daumens */
+    border-radius: 4px;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+    /* Farbe des Scrollbar-Daumens beim Hover */
+}
+
+
+.event-card {
+    background-color: #f9f9f9;
+    border-radius: 1em;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    margin: 1em;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+
+}
+
+.event-card-img-box {
+    margin: 1em;
+}
+
+.event-card-information {
+    margin: 1em;
+}
+
+.event-card-img-box img {
+    width: 19em;
+    height: 13.5em;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 5%;
+    object-fit: cover;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.event-card h2 {
+    color: rgb(35, 183, 40);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.event-card p {
+    color: #777;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Hervorhebung für ausgewählte Event-Karte */
+.selected-card {
+    background-color: rgb(35, 183, 40);
+    border: 2px solid #ffffff;
+}
+
+.selected-card p {
+    color: #ffffff;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.selected-card h2 {
+    color: #f7eded;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+/* Stil für ausgewählte Kalendereinträge */
+.fc-event-title.fc-sticky {
+
+    background-color: rgb(35, 183, 40);
+    cursor: pointer;
+    font-size: .8em;
+    word-wrap: break-word;
+    border-radius: 10%;
+}
+
+.fc-daygrid-day-events {
+    display: flex;
+    flex-direction: column;
+}
+
+.fc-h-event .fc-event-title-container {
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+    background-color: rgb(35, 183, 40);
+    border: #000000;
+    display: flex;
+}
+
+
+
+footer {
+    background-color: #fff;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-left {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-right {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-right nav {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-right li {
+    margin-bottom: 14px;
+    font-weight: bold;
+}
+
+.footer-right li a {
+    text-decoration: none;
+    color: rgb(116, 116, 116);
+}
+
+.footer-right li a:hover {
+    text-decoration: underline;
+}
+
+.team-kkp {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(35, 183, 40);
+
+}
+
+.gruendung {
+    font-size: 18px;
+}
+
+@media (max-width: 1370px) {
+    .event-card img {
+        width: 14em;
+        height: 11em;
+    }
+
+}
+
+@media (max-width: 1280px) {
+    header {
+        width: 100%;
+    }
+
+
+    .main-content {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .event-card {
+        flex-direction: column;
+        flex-basis: 50%;
+        margin: 0.5em;
+    }
+
+    .container {
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    .container::-webkit-scrollbar {
+        height: 8px;
+        /* Höhe der horizontalen Scrollleiste */
+    }
+
+    .container::-webkit-scrollbar-thumb {
+        background-color: #888;
+        /* Farbe des Scrollbar-Daumens */
+        border-radius: 4px;
+        /* Abrundung des Scrollbar-Daumens */
+    }
+
+    .container::-webkit-scrollbar-thumb:hover {
+        background-color: #555;
+        /* Farbe des Scrollbar-Daumens beim Hover */
+    }
+
+    .event-card {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 960px) {
+
+    body {
+        font-size: medium;
+    }
+
+    .intro-section {
+        flex-direction: column;
+    }
+
+
+    .left-section {
+        font-size: small;
+        border: none;
+    }
+
+
+    .buttons {
+        flex-direction: column;
+        border: none;
+    }
+
+    .lgn-btn {
+        border: 0.01em solid;
+        width: 80%;
+        text-align: center;
+    }
+
+    .btn-registrieren {
+        border: 0.01em solid;
+        border-color: black;
+    }
+
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ffffff;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        padding: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .navbar.showmenu {
+        display: flex;
+        z-index: 9999;
+    }
+
+
+    .menubutton {
+        display: block;
+        cursor: pointer;
+        background: inherit;
+        color: rgb(35, 183, 40);
+        font: inherit;
+        text-align: center;
+        padding: 0.5rem 1rem;
+    }
+
+    .event-header h1 {
+        font-size: large;
+    }
+
+    .event-header h2 {
+        font-size: medium;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .event-card {
+        flex-direction: column;
+
+    }
+}
+
+@media (max-width: 580px) {
+
+    .fc .fc-toolbar-title {
+        font-size: 1em;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-left {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    .team-kkp {
+        font-size: 20px;
+    }
+
+    .gruendung {
+        font-size: 16px;
+    }
+
+    .footer-right li a {
+        text-decoration: none;
+        color: rgb(116, 116, 116);
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-right {
+        flex-direction: column;
+    }
+
+    .event-card-img-box img {
+        width: 14em;
+        height: 9em;
+
+    }
+
+    .event-card-information p {
+        font-size: small;
+    }
+
+    .event-card-information h2 {
+        font-size: large;
+    }
+
+    .event-card button {
+        width: 10px;
+    }
+
+    .fc-toolbar-chunk {
+        display: flex;
+        flex-direction: column;
+        margin: 1em;
+        align-items: baseline;
+    }
+}

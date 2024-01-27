@@ -1,0 +1,570 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e7e7e7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+    height: 100%;
+}
+
+.logo img {
+    height: 100%;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+}
+
+.navbar img {
+    display: none;
+}
+
+.navbar a:hover {
+    background-color: rgb(35, 183, 40);
+    border-color: rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #000000;
+    border-radius: 2em;
+}
+
+.buttons a {
+    color: #000000;
+    font-size: 1.1rem;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.btn-registrieren {
+    background-color: rgb(35, 183, 40);
+    color: white !important;
+    border-left: solid 1px #000000;
+    border-radius: 2em;
+}
+
+.lgn-btn {
+    background-color: rgb(255, 255, 255);
+    color: black !important;
+    border-radius: 2em;
+}
+
+.buttons a:hover {
+    color: white !important;
+    text-decoration: underline;
+    background-color: rgb(116, 116, 116);
+}
+
+.menubutton {
+    display: none;
+    /* Menü-Button standardmäßig ausblenden */
+    cursor: pointer;
+    background: inherit;
+    color: rgb(35, 183, 40);
+    font: inherit;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 2em;
+}
+
+.menubutton:hover {
+    background-color: rgb(35, 183, 40);
+    border-color: rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+
+.menubutton img {
+    height: 2em;
+    width: 2em;
+}
+
+
+
+.p1 {
+    text-align: center;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1;
+    flex-grow: 1;
+    position: relative;
+    overflow: hidden;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+main img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 50%;
+    border-radius: 1rem;
+}
+
+.wrapper {
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    width: 100%;
+    border-radius: 10px;
+    margin: 1.5em;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    margin-bottom: 1em;
+}
+
+
+
+h2 {
+    font-size: 2.4em;
+    color: #fff;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #fff;
+    margin-top: 0;
+    text-align: center;
+    hyphens: auto;
+}
+
+h4 {
+    font-size: 20px;
+    color: #fff;
+    
+    text-align: center;
+}
+
+
+
+.button-container {
+    margin: 1em;
+}
+
+#kommunikation {
+    width: 100%;
+    font-size: 1em;
+    color: white;
+    background: transparent;
+    border: 1px solid #fff;
+    outline: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    
+}
+
+#kommunikation option {
+    background-color: rgb(35, 183, 40);
+    color: #fff;
+    padding: 5px;
+}
+
+#management {
+    width: 100%;
+    font-size: 1em;
+    color: white;
+    background: transparent;
+    border: 1px solid #fff;
+    outline: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+
+#management option {
+    background-color: rgb(35, 183, 40);
+    color: #fff;
+    padding: 5px;
+}
+
+
+
+
+.input-group {
+    width: 70%;
+    margin: 1em;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+
+.input-group input {
+    width: 100%;
+    height: 2.2em;
+    font-size: 1em;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+    outline: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+select{
+    text-align: center;
+    height: 2.2em;
+    margin: 0.5em;
+}
+
+label {
+    position: relative;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+label input {
+    position: absolute;
+    opacity: 0;
+}
+
+.input-check {
+    position: relative;
+    display: inline-block;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+    transition: .5s;
+}
+
+label input:checked~.input-check {
+    background: rgb(35, 183, 40);
+    border-color: rgb(35, 183, 40);
+    animation: animate .7s ease;
+}
+
+
+.input-check::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    width: 10px;
+    height: 4px;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transform: scale(0) rotate(-45deg);
+    transition: .5s;
+}
+
+label input:checked~.input-check::before {
+    transform: scale(1) rotate(-45deg);
+}
+
+.my-form input[type="text"] {
+    height: 40px;
+    width: 300px;
+    display: block;
+    margin-top: 10px;
+}
+
+.btn-login {
+    width: 100%;
+    height: 40px;
+    background: rgb(35, 183, 40);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .4);
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: .5s;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.btn:hover {
+    background: #fff;
+    color: rgb(35, 183, 40);
+}
+
+textarea {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+
+.input-group textarea {
+    width: 90%;
+    font-size: 1em;
+    color: #fff;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid #fff;
+    outline: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+
+footer {
+    background-color: #fff;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-left {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-right {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-right nav {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-right li {
+    margin-bottom: 14px;
+    font-weight: bold;
+}
+
+.footer-right li a {
+    text-decoration: none;
+    color: rgb(116, 116, 116);
+}
+
+.footer-right li a:hover {
+    text-decoration: underline;
+}
+
+.team-kkp {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(35, 183, 40);
+
+}
+
+.gruendung {
+    font-size: 18px;
+}
+
+
+@media (max-width: 1280px) {
+    header {
+        width: 100%;
+    }
+}
+
+@media (max-width: 960px) {
+
+    body {
+        font-size: medium;
+    }
+
+    .intro-section {
+        flex-direction: column;
+    }
+
+
+    .left-section {
+        font-size: small;
+        border: none;
+    }
+
+
+    .buttons {
+        flex-direction: column;
+        border: none;
+    }
+
+    .lgn-btn {
+        border: 0.01em solid;
+        width: 80%;
+        text-align: center;
+    }
+
+    .btn-registrieren {
+        border: 0.01em solid;
+        border-color: black;
+    }
+
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ffffff;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        padding: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .navbar.showmenu {
+        display: flex;
+        /* Navigationsleiste anzeigen, wenn Menü geöffnet ist */
+        z-index: 9999;
+    }
+
+    .wrapper{
+        max-width: 80%;
+    }
+
+
+    .menubutton {
+        display: block;
+        cursor: pointer;
+        background: inherit;
+        color: rgb(35, 183, 40);
+        font: inherit;
+        text-align: center;
+        padding: 0.5rem 1rem;
+    }
+    .input-group{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 580px) {
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-left {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    .team-kkp {
+        font-size: 20px;
+    }
+
+    .gruendung {
+        font-size: 16px;
+    }
+
+    .footer-right li a {
+        text-decoration: none;
+        color: rgb(116, 116, 116);
+        font-size: 13px;
+    }
+
+    .input-group{
+        width: 100%;
+    }
+
+  
+
+}
+
+@media (max-width: 480px) {
+    .footer-right {
+        flex-direction: column;
+    }
+
+    .input-group{
+        width: 95%;
+    }
+    .wrapper{
+        padding: 0;
+        margin-right: 0em;
+        margin-left: 0em;
+        max-width: 95%;
+    }
+    form{
+        margin: 0.3em;
+    }
+  
+}
