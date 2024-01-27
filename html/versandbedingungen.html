@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team KKP | Versandbedingugnen</title>
+    <link rel="stylesheet" href="../css/Versandbedingungen.css">
+    <link rel="icon" href="../img/Vereinslogo.png">
+</head>
+
+<body>
+
+    <header>
+        <a href="startseite.html" class="logo">
+            <img src="../img/Vereinslogo.png" alt="Vereinslogo">
+        </a>
+        <nav class="navbar">
+            <a href="teams.html">Teams</a>
+            <a href="trainingszeit.html">Trainingszeit</a>
+            <a href="events.html">Events</a>
+            <a href="vereinsfuehrung.html">Vereinsführung</a>
+            <a href="forum.html">Forum</a>
+            <a href="onlineshop.html">Onlineshop</a>
+        </nav>
+        <button id="menuButton" class="menubutton"> <img src="../img/menu.png" alt="menupic" id="erstesBild"><img
+                src="../img/menu-opened.png" alt="Anderes Bild" id="anderesBild" style="display: none;">
+        </button>
+        <div class="buttons">
+            <a href="login.html" class="lgn-btn">Login</a>
+            <a href="registrieren.html" class="btn-registrieren">Registrieren</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="Impresssum">
+
+            <div class="box-container">
+                <div class="box">
+                    <h2>Versandbedingugnen KKP</h2>
+
+                    <h3> Liefergebiete:</h3>
+                    <p>Wir bieten unseren Versandservice für Kunden innerhalb Deutschlands an. Leider können wir derzeit
+                        keine internationalen Lieferungen durchführen. </p>
+
+                    <h3> Versanddauer:</h3>
+                    <p>Die Lieferzeit variiert je nach Standort und Produkttyp. In der Regel bemühen wir uns, Ihre
+                        Bestellung innerhalb von 5-7 Werktagen nach Bestätigung zu versenden.
+                        Bei personalisierten oder speziell angefertigten Produkten kann die Bearbeitungszeit länger
+                        dauern. </p>
+
+                    <h3> Versandkosten:</h3>
+                    <p>Die Versandkosten werden während des Bestellvorgangs berechnet und basieren auf dem Gewicht Ihrer
+                        Bestellung sowie dem Lieferort.
+                        Kostenlose Versandoptionen können je nach Aktionen oder Bestellwert verfügbar sein. Bitte
+                        überprüfen Sie die Versandkosten vor Abschluss Ihrer Bestellung.</p>
+
+                    <h3> Sendungsverfolgung:</h3>
+                    <p>Für viele unserer Versandoptionen bieten wir eine Sendungsverfolgung an.
+                        Sie erhalten eine Versandbestätigung mit Tracking-Informationen, sobald Ihre Bestellung versandt
+                        wurde. Bitte beachten Sie, dass nicht alle Versandmethoden eine Sendungsverfolgung ermöglichen.
+                    </p>
+
+                    <h3> Nicht zustellbare Adressen:</h3>
+                    <p> Stellen Sie sicher, dass Sie uns eine korrekte und vollständige Lieferadresse angeben.
+                        Wir übernehmen keine Verantwortung für nicht zustellbare Pakete aufgrund ungenauer oder
+                        unvollständiger Adressangaben.</p>
+
+                    <h3> Zoll und Steuern:</h3>
+                    <p> Für internationale Bestellungen können zusätzliche Zoll- und Steuergebühren anfallen
+                        Diese Gebühren liegen in der Verantwortung des Kunden. Bitte informieren Sie sich vor Ihrer
+                        Bestellung über die Zollbestimmungen Ihres Landes.</p>
+
+                    <h3>Kundenservice: </h3>
+                    <p> Bei Fragen zu Ihrer Bestellung oder den Versandbedingungen stehen Ihnen unser Kundenservice-Team
+                        gerne zur Verfügung.
+                        Kontaktieren Sie uns unter 
+                    </p>
+                        
+                    <p style="white-space: pre-line;">
+                        KKP e.V.
+                        Robert-Gerwig-Platz 1
+                        78120 Furtwangen
+                        Telefon: 0511 96900 96 
+                        Fax: 0511 96900 796 
+                    </p>
+
+
+                    <p style="white-space: pre-line;"> 
+                        Mit sportlichen Grüßen
+                        Vereinsführung von Team KKP 
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <p class="team-kkp">Team KKP</p>
+                <p class="gruendung">gegründet 2023</p>
+            </div>
+            <div class="footer-right">
+                <nav>
+                    <ul>
+                        <li><a href="Datenschutz.html">Datenschutz</a></li>
+                        <li><a href="Versandbedingungen.html">Versandbedingungen</a></li>
+                        <li><a href="Aboutus.html">About us</a></li>
+                        <li><a href="Kontakt.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><a href="https://de-de.facebook.com/BundesligaOfficial/">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/bundesliga/">Instagram</a></li>
+                        <li><a href="https://twitter.com/Bundesliga_EN">Twitter</a></li>
+                        <li><a href="https://www.youtube.com/bundesligatv/videos">Youtube</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><a href="Impresssum.html">Impressum</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuButton = document.getElementById('menuButton');
+        const navbar = document.querySelector('.navbar');
+
+        menuButton.addEventListener('click', function () {
+            navbar.classList.toggle('showmenu');
+            toggleImages(); // Aufruf der Funktion zum Umschalten der Bilder vom Button
+        });
+
+        // Funktion zum Umschalten der Bilder vom Button
+        function toggleImages() {
+            const erstesBild = document.getElementById('erstesBild');
+            const anderesBild = document.getElementById('anderesBild');
+
+            if (navbar.classList.contains('showmenu')) {
+                erstesBild.style.display = 'none';
+                anderesBild.style.display = 'block';
+            } else {
+                erstesBild.style.display = 'block';
+                anderesBild.style.display = 'none';
+            }
+        }
+    });
+
+</script>
